@@ -14,3 +14,6 @@ The comment and post service althought they recieve it they do not process this 
 There is also a moderation service that is responsible for moderating comments. It listens for the comment created event and then emits a comment moderated event.
 The moderated service checks if the comment contains the word "orange" and if it does, it will change the status of the comment to "rejected". If the comment does not contain the word "orange", it will change the status of the comment to "approved".
 The query service listens for the comment moderated event and then updates its data.
+
+
+![Alt text](<microservices-blog architecture.png>)
