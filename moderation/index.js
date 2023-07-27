@@ -5,7 +5,7 @@ import axios from "axios";
 const app = express();
 app.use(bodyParser.json());
 
-//
+
 app.post("/events", async (req, res) => {
   const { type, data } = req.body;
 
