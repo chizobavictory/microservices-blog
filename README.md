@@ -10,3 +10,5 @@ The Client is a React application that is served by the client service. The clie
 
 Whenever users submits a comment, the comment service is going to emmit an event over to the event bus of "comment created", the event-bus will take the event and send it out automatically to all the differenct services in the app including the comment service. 
 The comment and post service althought they recieve it they do not process this event, the query service does the processing and it takes the event to understand the comment created and it takes it and stores it inside a local data structure 
+
+There is also a moderation service that is responsible for moderating comments. It listens for the comment created event and then emits a comment moderated event. The query service listens for the comment moderated event and then updates its data.
