@@ -20,3 +20,7 @@ The query service listens for the comment moderated event and then updates its d
 
 
 Docker is used to containerize each service. Kubernetes is used to orchestrate the containers. The application is deployed to a Kubernetes cluster using AWS.
+
+![docker commands drawio](https://github.com/chizobavictory/microservices-blog/assets/43314673/4198910b-cfa9-401d-8208-4bd49c00b04f)
+
+
