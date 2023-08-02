@@ -17,3 +17,6 @@ The query service listens for the comment moderated event and then updates its d
 
 
 ![Alt text](<microservices-blog architecture.png>)
+
+
+Docker is used to containerize each service. Kubernetes is used to orchestrate the containers. The application is deployed to a Kubernetes cluster using AWS.
